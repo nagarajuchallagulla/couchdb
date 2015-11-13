@@ -8,4 +8,4 @@ Docker compose file is configured to
 
 Hit & run
 * docker-compose up
-* open http://192.168.99.100:5984/\_utils/
+* open http://192.168.99.100:5984/_utils/
