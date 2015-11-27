@@ -6,5 +6,11 @@
     touch /etc/couchdb/.local_admin_created &&
     echo "Apache CouchDB admin account succesfully created"
 
+# setup default compactions
+[ ! -f /etc/couchdb/.local_compactions_setup ] && [ "$COMPACTIONS_DEFAULT" ] && \
+    echo -e '\n[compactions]\n_default = '$COMPACTIONS_DEFAULT'\n' >> /etc/couchdb/local.ini && \
+    touch /etc/couchdb/.local_compactions_setup &&
+    echo "Apache CouchDB compactions succesfully set up"
+
 # run CouchDB server
 couchdb
