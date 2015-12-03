@@ -8,7 +8,7 @@
 # setup configuration (delayed_commits, compations)
 [ ! -f /etc/couchdb/.local_ini_configured ] && \
     sed -i -r 's/\[couchdb\]/\[couchdb\]\ndelayed_commits = false/' /etc/couchdb/local.ini && \
-    echo -e '\n[compactions]\n_default = [{db_fragmentation, "50%"}, {view_fragmentation, "60%"}, {from, "21:00"}, {to, "22:59"}]\n' >> /etc/couchdb/local.ini && \
+    echo -e '\n[compactions]\n_default = [{db_fragmentation, "70%"}, {view_fragmentation, "60%"}, {from, "20:00"}, {to, "22:59"}]\n' >> /etc/couchdb/local.ini && \
     echo "Apache CouchDB configuration succesfully set up"
 
 touch /etc/couchdb/.local_ini_configured
