@@ -1,5 +1,8 @@
 couchdb:
   image: topmonks/couchdb
+  environment:
+    - ADMIN_USERNAME=admin
+    - ADMIN_PASSWORD=admin
   volumes:
     - ./var/lib:/usr/local/var/lib/couchdb
     - ./var/log:/usr/local/var/log/couchdb
