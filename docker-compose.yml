@@ -1,9 +1,8 @@
 couchdb:
   image: topmonks/couchdb
-  environment:
-    - ADMIN_USERNAME=admin
-    - ADMIN_PASSWORD=admin
   volumes:
-    - ./data:/var/lib/couchdb
+    - ./var/lib:/usr/local/var/lib/couchdb
+    - ./var/log:/usr/local/var/log/couchdb
+    - ./var/etc:/usr/local/var/etc/couchdb
   ports:
     - "5984:5984"
