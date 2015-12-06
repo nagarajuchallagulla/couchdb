@@ -1,5 +1,5 @@
 ## CouchDB - hit & run
-Debian:jessie docker image with CouchDB 1.6.1 based on [https://hub.docker.com/r/klaemo/couchdb/][1] image
+Debian:jessie docker image with CouchDB 1.6.1 based on [klaemo/couchdb][1] image
 
 Docker compose file is configured to
 * use default port **5984**
@@ -11,6 +11,6 @@ Docker compose file is configured to
 
 Hit & run
 * docker-compose up
-* open http://192.168.99.100:5984/\_utils/
+* open http://192.168.99.100:5984/_utils/
 
 [1]:	https://hub.docker.com/r/klaemo/couchdb/ "klaemo/couchdb"
