@@ -1,5 +1,5 @@
 couchdb:
-  image: topmonks/couchdb
+  image: tutum.co/pfly/couchdb
   environment:
     - ADMIN_USER=admin
     - ADMIN_PASSWORD=admin

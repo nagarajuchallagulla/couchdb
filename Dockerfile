@@ -1,6 +1,6 @@
 FROM klaemo/couchdb:1.6.1
 
-MAINTAINER tomas.bouda@topmonks.com
+MAINTAINER tomas.bouda@purposefly.com
 
 # custom setup
 
