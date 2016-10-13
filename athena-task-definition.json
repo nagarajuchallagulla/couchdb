@@ -29,7 +29,7 @@
           "hostPort": 5984
         }
       ],
-      "memory": 512,
+      "memory": 256,
       "entryPoint": ["/docker-command.sh"],
       "environment" : [
         { "name" : "ADMIN_USER", "value" : "admin" },
