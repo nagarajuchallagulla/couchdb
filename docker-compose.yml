@@ -1,11 +1,7 @@
 couchdb:
   build: .
-  environment:
-    - ADMIN_USER=admin
-    - ADMIN_PASSWORD=admin
   volumes:
-    - ./var/lib:/usr/local/var/lib/couchdb
-    - ./var/log:/usr/local/var/log/couchdb
-    - ./var/etc:/usr/local/var/etc/couchdb
+    - ./etc:/usr/local/etc/couchdb/local.d
+    - ./lib:/usr/local/var/lib/couchdb
   ports:
     - "5984:5984"

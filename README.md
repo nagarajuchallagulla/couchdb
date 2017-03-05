@@ -1,16 +1,19 @@
-## CouchDB - hit & run
-Debian:jessie docker image with CouchDB 1.6.1 based on [klaemo/couchdb][1] image
 
-Docker compose file is configured to
-* use default port **5984**
-* create user **admin** with password **admin** 
-* persist database files into **./var/lib**
-* persist log files into **./var/log**
-* use configuration file from **./var/etc**
-* daily auto-compactions
+## CouchDB
 
-Hit & run
+CouchDB 1.6.1 based on [klaemo/couchdb](https://hub.docker.com/r/klaemo/couchdb/) image
+
+### configuration
+
+* address `0.0.0.0`, port `5984`
+* user `admin`, password `admin`
+* persisted directories
+    * database files `./lib`
+    * configuration files `./etc`
+* max document size `16MB`
+* sign-out after `60` minutes
+
+### run
+
 * docker-compose up
-* open http://192.168.99.100:5984/_utils/
-
-[1]:	https://hub.docker.com/r/klaemo/couchdb/ "klaemo/couchdb"
+* open http://localhost:5984/_utils/
